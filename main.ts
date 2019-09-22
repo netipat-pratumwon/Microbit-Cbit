@@ -38,7 +38,7 @@ namespace cbit_Display_class {
         ON =1
     }
 
-    //% blockId=cbit_LED1 block="LED Light|pin %pin|状态 %value"
+    //% blockId=cbit_LED1 block="LED Light|Pin %pin|Status %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
@@ -61,7 +61,7 @@ namespace cbit_Display_class {
 
     }
 
-    //% blockId=cbit_BreathLED block="Breathing light|pin %pin"
+    //% blockId=cbit_BreathLED block="Breathing light|Pin %pin"
     //% weight=3
     //% blockGap=8
     //% color="#C814B8"
@@ -713,9 +713,9 @@ namespace cbit_小车类 {
         setPwm(14, 0, speed);
 
         //pins.digitalWritePin(DigitalPin.P16, 0);
-        //pins.analogWritePin(AnalogPin.P1, speed); //速度控制
+        //pins.analogWritePin(AnalogPin.P1, speed); //speed control
 
-        //pins.analogWritePin(AnalogPin.P0, 1023 - speed);//速度控制
+        //pins.analogWritePin(AnalogPin.P0, 1023 - speed);//speed control
         //pins.digitalWritePin(DigitalPin.P8, 1);
     }
 
@@ -1024,7 +1024,7 @@ namespace cbit_小车类 {
         return temp;
 
     }
-    //% blockId=cbit_Line_Sensor block="Patrol sensor|Position %direct|检测到 %value"
+    //% blockId=cbit_Line_Sensor block="Patrol sensor|Position %direct|Detected %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
