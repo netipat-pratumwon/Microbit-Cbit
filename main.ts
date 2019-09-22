@@ -8,7 +8,7 @@ load dependency
 
 
 //% color="#C814B8" weight=25 icon="\uf1d4"
-namespace cbit_Display_class {
+namespace cbit_Display {
     
     export enum enColor {
 
@@ -161,7 +161,7 @@ namespace cbit_Display_class {
  ****************************************************************************************************************************************/
 
 //% color="#87CEEB" weight=24 icon="\uf1b6"
-namespace cbit_传感器类 {
+namespace cbit_Sensor {
 
     export enum enVoice {
         //% blockId="Voice" block="Voice"
@@ -259,7 +259,7 @@ namespace cbit_传感器类 {
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace cbit_Input_class {
+namespace cbit_Input {
 
     export enum enRocker {
         //% blockId="Nostate" block="Nostate"
@@ -370,7 +370,7 @@ namespace cbit_Input_class {
  ****************************************************************************************************************************************/
 
 //% color="#D2691E" weight=22 icon="\uf001"
-namespace cbit_音乐类 {
+namespace cbit_Music {
     export enum enBuzzer {
 
         //% blockId="NoBeep" block="NoBeep"
@@ -399,7 +399,7 @@ namespace cbit_音乐类 {
  ****************************************************************************************************************************************/
 
 //% color="#0000CD" weight=21 icon="\uf185"
-namespace cbit_电机类 {
+namespace cbit_Motor {
 
     //% blockId=cbit_Fan block="Fan|Pin %pin|Speed %value"
     //% weight=100
@@ -428,7 +428,7 @@ namespace cbit_电机类 {
 }
 
 //% color="#006400" weight=20 icon="\uf1b9"
-namespace cbit_小车类 {
+namespace cbit_Car {
 
     const PCA9685_ADD = 0x41
     const MODE1 = 0x00
