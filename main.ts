@@ -8,7 +8,7 @@ load dependency
 
 
 //% color="#C814B8" weight=25 icon="\uf1d4"
-namespace cbit_显示类 {
+namespace cbit_Display_class {
     
     export enum enColor {
 
@@ -259,33 +259,33 @@ namespace cbit_传感器类 {
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
-namespace cbit_输入类 {
+namespace cbit_Input_class {
 
     export enum enRocker {
-        //% blockId="Nostate" block="无"
+        //% blockId="Nostate" block="Nostate"
         Nostate = 0,
-        //% blockId="Up" block="上"
+        //% blockId="Up" block="Up"
         Up,
-        //% blockId="Down" block="下"
+        //% blockId="Down" block="Down"
         Down,
-        //% blockId="Left" block="左"
+        //% blockId="Left" block="Left"
         Left,
-        //% blockId="Right" block="右"
+        //% blockId="Right" block="Right"
         Right,
-        //% blockId="Press" block="按下"
+        //% blockId="Press" block="Press"
         Press
     }
 
     export enum enTouch {
-        //% blockId="NoTouch" block="未触摸"
+        //% blockId="NoTouch" block="NoTouch"
         NoTouch = 0,
-        //% blockId="Touch" block="触摸"
+        //% blockId="Touch" block="Touch"
         Touch = 1
     }
     export enum enButton {
-        //% blockId="Press" block="按下"
+        //% blockId="Press" block="Press"
         Press = 0,
-        //% blockId="Realse" block="松开"
+        //% blockId="Realse" block="Realse"
         Realse = 1
     }
 
@@ -528,29 +528,29 @@ namespace cbit_小车类 {
         S3
     }
     export enum CarState {
-        //% blockId="Car_Run" block="前行"
+        //% blockId="Car_Run" block="Car_Run"
         Car_Run = 1,
-        //% blockId="Car_Back" block="后退"
+        //% blockId="Car_Back" block="Car_Back"
         Car_Back = 2,
-        //% blockId="Car_Left" block="左转"
+        //% blockId="Car_Left" block="Car_Left"
         Car_Left = 3,
-        //% blockId="Car_Right" block="右转"
+        //% blockId="Car_Right" block="Car_Right"
         Car_Right = 4,
-        //% blockId="Car_Stop" block="停止"
+        //% blockId="Car_Stop" block="Car_Stop"
         Car_Stop = 5,
-        //% blockId="Car_SpinLeft" block="原地左旋"
+        //% blockId="Car_SpinLeft" block="Car_SpinLeft"
         Car_SpinLeft = 6,
-        //% blockId="Car_SpinRight" block="原地右旋"
+        //% blockId="Car_SpinRight" block="Car_SpinRight"
         Car_SpinRight = 7         
     }
     export enum AloneState {
-        //% blockId="Right_Z_Motor" block="右侧电机正转"
+        //% blockId="Right_Z_Motor" block="Right_Z_Motor"
         Right_Z_Motor = 1,
-        //% blockId="Right_F_Motor" block="右侧电机反转"
+        //% blockId="Right_F_Motor" block="Right_F_Motor"
         Right_F_Motor = 2,
-        //% blockId="Left_Z_Motor" block="左侧电机正转"
+        //% blockId="Left_Z_Motor" block="Left_Z_Motor"
         Left_Z_Motor = 3,
-        //% blockId="Left_F_Motor" block="左侧电机反转"
+        //% blockId="Left_F_Motor" block="Left_F_Motor"
         Left_F_Motor = 4       
     }
 
@@ -906,7 +906,7 @@ namespace cbit_小车类 {
 
     }
 
-    //% blockId=cbit_RGB_Car_Program block="七彩流水灯"
+    //% blockId=cbit_RGB_Car_Program block="Colorful water light"
     //% weight=99
     //% blockGap=10
     //% color="#C814B8"
@@ -920,7 +920,7 @@ namespace cbit_小车类 {
     }
 
 
-    //% blockId=cbit_ultrasonic_car block="超声波返回(cm)"
+    //% blockId=cbit_ultrasonic_car block="Ultrasonic return(cm)"
     //% color="#006400"
     //% weight=98
     //% blockGap=10
