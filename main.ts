@@ -12,21 +12,21 @@ namespace cbit_显示类 {
     
     export enum enColor {
 
-        //% blockId="OFF" block="灭"
+        //% blockId="OFF" block="OFF"
         OFF = 0,
-        //% blockId="Red" block="红色"
+        //% blockId="Red" block="RED"
         Red,
-        //% blockId="Green" block="绿色"
+        //% blockId="Green" block="Green"
         Green,
-        //% blockId="Blue" block="蓝色"
+        //% blockId="Blue" block="Blue"
         Blue,
-        //% blockId="White" block="白色"
+        //% blockId="White" block="White"
         White,
-        //% blockId="Cyan" block="青色"
+        //% blockId="Cyan" block="Cyan"
         Cyan,
-        //% blockId="Pinkish" block="品红"
+        //% blockId="Pinkish" block="Pinkish"
         Pinkish,
-        //% blockId="Green" block="黄色"
+        //% blockId="Green" block="Green"
         Yellow,
 
     }
