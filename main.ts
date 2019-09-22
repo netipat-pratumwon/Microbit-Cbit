@@ -95,7 +95,7 @@ namespace cbit_Display_class {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=cbit_RGB2 block="RGB colorful lights|pinsR %pin1|PinG %pin2|PinB %pin3|Display %value"
+    //% blockId=cbit_RGB2 block="RGB colorful lights|PinR %pin1|PinG %pin2|PinB %pin3|Display %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
@@ -203,7 +203,7 @@ namespace cbit_传感器类 {
             control.waitMicros(13);
         }
     }
-    //% blockId=cbit_IR_Sensor block="Infrared Sensor|Pin %pin|  |%value|障碍物"
+    //% blockId=cbit_IR_Sensor block="Infrared Sensor|Pin %pin|  |%value|obstacle"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -401,7 +401,7 @@ namespace cbit_音乐类 {
 //% color="#0000CD" weight=21 icon="\uf185"
 namespace cbit_电机类 {
 
-    //% blockId=cbit_Fan block="风扇|引脚 %pin|速度 %value"
+    //% blockId=cbit_Fan block="Fan|Pin %pin|Speed %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -413,7 +413,7 @@ namespace cbit_电机类 {
 
     }
 
-    //% blockId=cbit_Servo block="舵机|引脚 %pin|角度 %value"
+    //% blockId=cbit_Servo block="Steering Gear|Pin %pin|Angle %value"
     //% weight=100
     //% blockGap=10
     //% color="#0000CD"
@@ -454,21 +454,21 @@ namespace cbit_小车类 {
 
     export enum enColor {
 
-        //% blockId="OFF" block="灭"
+        //% blockId="OFF" block="OFF"
         OFF = 0,
-        //% blockId="Red" block="红色"
+        //% blockId="Red" block="Red"
         Red,
-        //% blockId="Green" block="绿色"
+        //% blockId="Green" block="Green"
         Green,
-        //% blockId="Blue" block="蓝色"
+        //% blockId="Blue" block="Blue"
         Blue,
-        //% blockId="White" block="白色"
+        //% blockId="White" block="White"
         White,
-        //% blockId="Cyan" block="青色"
+        //% blockId="Cyan" block="Cyan"
         Cyan,
-        //% blockId="Pinkish" block="品红"
+        //% blockId="Pinkish" block="Pinkish"
         Pinkish,
-        //% blockId="Green" block="黄色"
+        //% blockId="Green" block="Green"
         Yellow,
 
     }
@@ -498,24 +498,24 @@ namespace cbit_小车类 {
     }
     export enum enPos {
 
-        //% blockId="LeftState" block="左边状态"
+        //% blockId="LeftState" block="LeftState"
         LeftState = 1,
-        //% blockId="RightState" block="右边状态"
+        //% blockId="RightState" block="RightState"
         RightState = 0
     }
 
     export enum enLineState {
-        //% blockId="White" block="白线"
+        //% blockId="White" block="White"
         White = 0,
-        //% blockId="Black" block="黑线"
+        //% blockId="Black" block="Black"
         Black = 1
 
     }
     
     export enum enAvoidState {
-        //% blockId="OBSTACLE" block="有障碍物"
+        //% blockId="OBSTACLE" block="OBSTACLE"
         OBSTACLE = 0,
-        //% blockId="NOOBSTACLE" block="无障碍物"
+        //% blockId="NOOBSTACLE" block="NOOBSTACLE"
         NOOBSTACLE = 1
 
     }
@@ -627,9 +627,9 @@ namespace cbit_小车类 {
         setPwm(15, 0, speed);
         setPwm(14, 0, 0);
         //pins.digitalWritePin(DigitalPin.P16, 1);
-       // pins.analogWritePin(AnalogPin.P1, 1023-speed); //速度控制
+       // pins.analogWritePin(AnalogPin.P1, 1023-speed); //speed control
 
-       // pins.analogWritePin(AnalogPin.P0, speed);//速度控制
+       // pins.analogWritePin(AnalogPin.P0, speed);//speed control
        // pins.digitalWritePin(DigitalPin.P8, 0);
     }
    function Left_Z_run(speed: number) {
@@ -823,7 +823,7 @@ namespace cbit_小车类 {
      * *****************************************************************
      * @param index
      */
-    //% blockId=cbit_RGB_Car_Big2 block="小车RGB探照灯|选择车灯颜色 %value"
+    //% blockId=cbit_RGB_Car_Big2 block="Car RGB searchlight|Select car light color %value"
     //% weight=101
     //% blockGap=10
     //% color="#C814B8"
@@ -881,7 +881,7 @@ namespace cbit_小车类 {
             }
         }
     }
-    //% blockId=cbit_RGB_Car_Big block="小车RGB探照灯|红色 %value1|绿色 %value2|蓝色 %value3"
+    //% blockId=cbit_RGB_Car_Big block="Car RGB Searchlight|Red %value1|Green %value2|Blue %value3"
     //% weight=100
     //% blockGap=10
     //% color="#C814B8"
@@ -940,7 +940,7 @@ namespace cbit_小车类 {
         return d / 58;
     }
 
-    //% blockId=cbit_Music_Car block="小车音乐播放|%index"
+    //% blockId=cbit_Music_Car block="Car Music Play|%index"
     //% weight=97
     //% blockGap=10
     //% color="#006400"
@@ -969,7 +969,7 @@ namespace cbit_小车类 {
             case enMusic.power_down: music.beginMelody(music.builtInMelody(Melodies.PowerDown), MelodyOptions.Once); break;
         }
     }
-    //% blockId=cbit_Servo_Car block="小车舵机|编号 %num|角度 %value"
+    //% blockId=cbit_Servo_Car block="Car Steering Gear|No. %num|Angle %value"
     //% weight=96
     //% blockGap=10
     //% color="#006400"
@@ -984,7 +984,7 @@ namespace cbit_小车类 {
 
     }
 
-    //% blockId=cbit_Avoid_Sensor block="避障传感器|检测到 %value"
+    //% blockId=cbit_Avoid_Sensor block="Obstacle avoidance Sensor|Detected %value"
     //% weight=95
     //% blockGap=10
     //% color="#006400"
@@ -1024,7 +1024,7 @@ namespace cbit_小车类 {
         return temp;
 
     }
-    //% blockId=cbit_Line_Sensor block="巡线传感器|位置 %direct|检测到 %value"
+    //% blockId=cbit_Line_Sensor block="Patrol sensor|Position %direct|检测到 %value"
     //% weight=94
     //% blockGap=10
     //% color="#006400"
@@ -1069,7 +1069,7 @@ namespace cbit_小车类 {
         return temp;
 
     }
-    //% blockId=cbit_CarCtrl block="小车控制|%index"
+    //% blockId=cbit_CarCtrl block="Car control|%index"
     //% weight=93
     //% blockGap=10
     //% color="#006400"
@@ -1085,7 +1085,7 @@ namespace cbit_小车类 {
             case CarState.Car_SpinRight: Car_spinright(255); break;
         }
     }
-    //% blockId=cbit_CarCtrlSpeed block="小车控制|%index|速度 %speed"
+    //% blockId=cbit_CarCtrlSpeed block="Car control|%index|Speed %speed"
     //% weight=92
     //% blockGap=10
     //% speed.min=0 speed.max=255
@@ -1102,7 +1102,7 @@ namespace cbit_小车类 {
             case CarState.Car_SpinRight: Car_spinright(speed); break;
         }
     }
-    //% blockId=cbit_AloneCtrlSpeed block="单独电机|%index|速度 %speed"
+    //% blockId=cbit_AloneCtrlSpeed block="Separate motor|%index|Speed %speed"
     //% weight=91
     //% blockGap=10
     //% speed.min=0 speed.max=255
