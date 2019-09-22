@@ -32,13 +32,13 @@ namespace cbit_Display_class {
     }
     export enum enLED1 {
         
-        //% blockId="OFF" block="灭"
+        //% blockId="OFF" block="OFF"
         OFF = 0,
-        //% blockId="ON" block="亮"
+        //% blockId="ON" block="ON"
         ON =1
     }
 
-    //% blockId=cbit_LED1 block="LED灯|引脚 %pin|状态 %value"
+    //% blockId=cbit_LED1 block="LED Light|pin %pin|状态 %value"
     //% weight=5
     //% blockGap=8
     //% color="#C814B8"
@@ -49,7 +49,7 @@ namespace cbit_Display_class {
 
     }
 
-    //% blockId=cbit_LED2 block="LED灯|引脚 %pin|亮度 %value"
+    //% blockId=cbit_LED2 block="LED Light|pin %pin|Brightness %value"
     //% weight=4
     //% blockGap=8
     //% color="#C814B8"
@@ -61,7 +61,7 @@ namespace cbit_Display_class {
 
     }
 
-    //% blockId=cbit_BreathLED block="呼吸灯|引脚 %pin"
+    //% blockId=cbit_BreathLED block="Breathing light|pin %pin"
     //% weight=3
     //% blockGap=8
     //% color="#C814B8"
@@ -82,7 +82,7 @@ namespace cbit_Display_class {
 
     }
 
-    //% blockId=cbit_RGB block="RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|红色 %value1|绿色 %value2|蓝色 %value3"
+    //% blockId=cbit_RGB block="RGB Colorful Lights|PinR %pin1|PinG %pin2|PinB %pin3|RED %value1|Green %value2|Blue %value3"
     //% weight=2
     //% blockGap=8
     //% color="#C814B8"
@@ -95,7 +95,7 @@ namespace cbit_Display_class {
         pins.analogWritePin(pin3, value3 * 1024 / 256);
 
     }
-    //% blockId=cbit_RGB2 block="RGB七彩灯|引脚R %pin1|引脚G %pin2|引脚B %pin3|显示 %value"
+    //% blockId=cbit_RGB2 block="RGB colorful lights|pinsR %pin1|PinG %pin2|PinB %pin3|Display %value"
     //% weight=1
     //% blockGap=8
     //% color="#C814B8"
@@ -157,28 +157,28 @@ namespace cbit_Display_class {
    
 }
 /*****************************************************************************************************************************************
- *  传感器类 ***************************************************************************************************************************** 
+ *  Sensor class ***************************************************************************************************************************** 
  ****************************************************************************************************************************************/
 
 //% color="#87CEEB" weight=24 icon="\uf1b6"
 namespace cbit_传感器类 {
 
     export enum enVoice {
-        //% blockId="Voice" block="有声音"
+        //% blockId="Voice" block="Voice"
         Voice = 0,
-        //% blockId="NoVoice" block="无声音"
+        //% blockId="NoVoice" block="NoVoice"
         NoVoice = 1
     }
 
     export enum enIR {
-        //% blockId="Get" block="检测到"
+        //% blockId="Get" block="Get"
         Get = 0,
-        //% blockId="NoVoice" block="未检测"
+        //% blockId="NoVoice" block="NoVoice"
         NoGet = 1
     }
     
 
-    //% blockId=cbit_Voice_Sensor block="声音传感器|引脚 %pin|返回 %value"
+    //% blockId=cbit_Voice_Sensor block="Sound Sensor|Pin %pin|Return %value"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -203,7 +203,7 @@ namespace cbit_传感器类 {
             control.waitMicros(13);
         }
     }
-    //% blockId=cbit_IR_Sensor block="红外传感器|引脚 %pin|  |%value|障碍物"
+    //% blockId=cbit_IR_Sensor block="Infrared Sensor|Pin %pin|  |%value|障碍物"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -221,7 +221,7 @@ namespace cbit_传感器类 {
 
     }
 
-    //% blockId=cbit_IR_Send block="红外发射|引脚 %pin"
+    //% blockId=cbit_IR_Send block="Infrared Emission|Pin %pin"
     //% weight=100
     //% blockGap=10
     //% color="#87CEEB"
@@ -233,7 +233,7 @@ namespace cbit_传感器类 {
 
     }
    
-    //% blockId=cbit_ultrasonic block="超声波|发射管脚 %Trig|接收管脚 %Echo"
+    //% blockId=cbit_ultrasonic block="Ultrasonic|Launch Pin %Trig|Receiving Pin %Echo"
     //% color="#87CEEB"
     //% weight=100
     //% blockGap=10
@@ -255,7 +255,7 @@ namespace cbit_传感器类 {
 }
 
 /*****************************************************************************************************************************************
- *  输入类 *****************************************************************************************************************************
+ *  Input class *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
 //% color="#808080" weight=23 icon="\uf11c"
@@ -289,7 +289,7 @@ namespace cbit_Input_class {
         Realse = 1
     }
 
-    //% blockId=cbit_TouchPad block="触摸开关|引脚 %pin|返回 %value"
+    //% blockId=cbit_TouchPad block="Touch switch|Pin %pin|Return %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -305,7 +305,7 @@ namespace cbit_Input_class {
         }
 
     }
-    //% blockId=cbit_Rocker block="遥杆|VRX %pin1|VRY %pin2|SW %pin3|返回 %value"
+    //% blockId=cbit_Rocker block="JoyStick|VRX %pin1|VRY %pin2|SW %pin3|Return %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -318,7 +318,7 @@ namespace cbit_Input_class {
         let z = pins.analogReadPin(pin3);
         let now_state = enRocker.Nostate;
 
-        if (x <= 20) // 上
+        if (x <= 20) // On
         {
 
             now_state = enRocker.Up;
@@ -329,11 +329,11 @@ namespace cbit_Input_class {
 
             now_state = enRocker.Down;
         }
-        if (y <= 50) //右
+        if (y <= 50) //Right
         {
             now_state = enRocker.Right;
         }
-        if (y >= 1000) //左
+        if (y >= 1000) //Left
         {
             now_state = enRocker.Left;
         }
@@ -347,7 +347,7 @@ namespace cbit_Input_class {
 
     }
 
-    //% blockId=cbit_Button block="按键|引脚 %pin|返回 %value"
+    //% blockId=cbit_Button block="Button|pin %pin|Return %value"
     //% weight=100
     //% blockGap=10
     //% color="#808080"
@@ -366,20 +366,20 @@ namespace cbit_Input_class {
 }
 
 /*****************************************************************************************************************************************
- *    音乐类 *****************************************************************************************************************************
+ *    Music class *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
 //% color="#D2691E" weight=22 icon="\uf001"
 namespace cbit_音乐类 {
     export enum enBuzzer {
 
-        //% blockId="NoBeep" block="响"
+        //% blockId="NoBeep" block="NoBeep"
         NoBeep = 0,
-        //% blockId="Beep" block="不响"
+        //% blockId="Beep" block="Beep"
         Beep
     }
 
-    //% blockId=cbit_Buzzer block="有源蜂鸣器|引脚 %pin|值 %value"
+    //% blockId=cbit_Buzzer block="Active buzzer|Pin %pin|Value %value"
     //% weight=100
     //% blockGap=10 
     //% color="#D2691E"
@@ -395,7 +395,7 @@ namespace cbit_音乐类 {
 }
 
 /*****************************************************************************************************************************************
- *    电机类 *****************************************************************************************************************************
+ *    Motor class *****************************************************************************************************************************
  ****************************************************************************************************************************************/
 
 //% color="#0000CD" weight=21 icon="\uf185"
